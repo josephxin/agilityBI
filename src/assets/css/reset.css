@@ -1,0 +1,228 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+input,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+article,
+aside,
+audio,
+canvas,
+figure,
+footer,
+header,
+mark,
+menu,
+nav,
+section,
+time,
+video {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+blockquote {
+	display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: top;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong,
+em,
+i {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+mark {
+	background: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+input::-ms-clear {
+	display: none !important;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-width: 1360px;
+	font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", "Droid Sans Fallback", SimSun, sans-serif;
+	background: #f2f4f5;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 0;
+	cursor: pointer;
+	user-select: none;
+}
+
+button[disabled] {
+	cursor: not-allowed !important;
+	opacity: .6 !important;
+}
+
+label {
+	user-select: none;
+}
+
+.fl {
+	float: left;
+	display: inline;
+}
+
+.fr {
+	float: right;
+	display: inline;
+}
+
+.tl {
+	text-align: left !important;
+}
+
+.tr {
+	text-align: right !important;
+}
+
+.tc {
+	text-align: center !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+/* 滚动条美化
+   ========================================================================== */
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #CCCCCC;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 6px;
+	background-color: #999999;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 6px;
+	background-color: #999999;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+

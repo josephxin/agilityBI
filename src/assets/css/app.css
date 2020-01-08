@@ -1,0 +1,606 @@
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* --- Node common -------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.table,
+.view {
+	/*background-color: #3E7E9C;*/
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	position: absolute;
+	z-index: 11;
+	overflow: hidden;
+	min-width: 80px;
+	min-height: 30px;
+	width: auto;
+	border: 1px solid #fceceb;
+}
+
+.table .name,
+.view .name,
+.table li.jtk-draggable,
+.view li.jtk-draggable {
+	background-color: #f9dfd6;
+	color: #a92312;
+	cursor: move;
+	font-size: 14px;
+	line-height: 40px;
+	padding: 6px;
+	text-align: center;
+	width: 141px;
+	height: 40px;
+}
+
+.table li.jtk-draggable,
+.view li.jtk-draggable {
+	min-width: 100px;
+	border-radius: 14px;
+}
+
+.table .name span,
+.view .name span {
+	/*cursor:pointer;*/
+	font-size: 14px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* --- Table nodes -------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.table {
+	margin-bottom: 0;
+	/*min-width: 200px;*/
+}
+
+.table-columns {
+	margin: 0;
+	padding: 0;
+}
+
+.table-columns li {
+	position: relative;
+	border-bottom: 1px solid #fce6e4;
+}
+
+.table-column {
+	list-style-type: none;
+	padding: 10px 6px;
+	height: 20px;
+	text-align: center;
+}
+
+.table-column-delete,
+.view-delete {
+	color: #407364;
+	padding: 2px;
+	cursor: pointer;
+	float: left;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.table-column-edit {
+	color: #407364;
+	float: right;
+	cursor: pointer;
+}
+
+.new-column,
+.delete,
+.table-column-delete {
+	-webkit-transition: background-color 0.15s ease-in;
+	-moz-transition: background-color 0.15s ease-in;
+	-o-transition: background-color 0.15s ease-in;
+	transition: background-color 0.15s ease-in;
+}
+
+.new-column:hover,
+.delete:hover {
+	color: #ff8000;
+}
+
+.table-column-delete:hover {
+	color: #434343;
+}
+
+.table-column-type-varchar {
+	background-color: #fdf6f5;
+}
+
+.table-column-type-integer {
+	background-color: #fdf6f5;
+}
+
+.table-column-type-date {
+	background-color: #e5f5f0;
+}
+
+.table-column[primary-key='true'] {
+	background-color: #fdf6f5;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* --- View nodes -------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.view {
+	margin-bottom: 0;
+	width: 200px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.view-details {
+	font-size: 10px;
+	font-family: Courier;
+	padding: 10px;
+}
+
+.view .view-delete {
+	color: #f7ebca;
+	padding: 2px;
+	cursor: pointer;
+	float: left;
+	font-size: 10px;
+	line-height: 20px;
+}
+
+.view .view-delete:hover {
+	color: #ff8000;
+}
+
+.txtViewQuery {
+	width: 272px;
+	height: 132px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* --- Drag/drop interactions ------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.drop-hover {
+	/*background-color: #629f72 !important;
+  color: #FFF !important;*/
+	background-color: blue !important;
+	color: #dd2911 !important;
+}
+
+.theme-blue .drop-hover {
+	background-color: #4a6c98 !important;
+	color: #FFF !important;
+	transition: .3s;
+}
+
+.theme-green .drop-hover {
+	background-color: #017734 !important;
+	color: #FFF !important;
+	transition: .3s;
+}
+
+.theme-red .drop-hover {
+	background-color: #a92312 !important;
+	color: #FFF !important;
+	transition: .3s;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* --- Edge styles ------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.delete-relationship {
+	border-radius: 12px;
+	cursor: pointer;
+	/*text-align: center;*/
+}
+
+.delete-relationship:hover {
+	color: #FFF;
+	background-color: #434343;
+	padding: 4px;
+}
+
+.common-edge path {
+	/*自己拖拽出来的线的颜色和大小*/
+	stroke-width: 1;
+	/*stroke: #f76258;*/
+}
+
+.common-edge.jtk-hover path {
+	/*stroke:#434343;*/
+	/*stroke: #f76258;*/
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* --- dialogs ------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+.form-labels-float {
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 6px;
+	padding-top: 6px;
+	font-size: 14px;
+}
+
+.form-labels {
+	font-weight: bold;
+	text-align: left;
+	padding-right: 6px;
+	font-size: 14px;
+}
+
+.checkbox-id {
+	margin-top: 6px;
+	margin-left: 22px;
+}
+
+.btn-icon-margin {
+	line-height: 18px;
+	margin-left: 10px;
+}
+
+.pull-left {
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/* 自己加的样式*/
+
+.aLabel {
+	width: 10px;
+	height: 10px;
+	background: url(../imgs/blue/delete.png) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.add_cancel_none {
+	position: absolute;
+	z-index: 100;
+	right: 20px;
+	top: 20px;
+}
+
+.add_cancel_none button+button {
+	margin-left: 16px;
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+.name {
+	width: 141px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*实体配置的样式*/
+
+.entity_jsplumb .table-columns {
+	width: 153px;
+}
+
+.entity_jsplumb .entityJsplumb_input {
+	float: left;
+}
+
+
+/*.entity_jsplumb .entityJsplumb_input{
+	width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid green;
+  margin-top: 2px;
+	position: relative;
+	float: left;
+}*/
+
+.entity_jsplumb .entityJsplumb_input.correct {
+	background: green;
+}
+
+.entity_jsplumb .entityJsplumb_input:after {
+	box-sizing: content-box;
+	content: "";
+	border: 1px solid #fff;
+	border-left: 0;
+	border-top: 0;
+	height: 7px;
+	left: 5px;
+	position: absolute;
+	top: 2px;
+	transform: rotate(45deg) scaleY(0);
+	width: 3px;
+	transition: transform .15s ease-in .05s;
+	transform-origin: center;
+	transform: rotate(45deg) scaleY(1);
+}
+
+.column_name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.entity_jsplumb .entityJsplumb_input input {
+	vertical-align: middle;
+	/*opacity:0;
+	vertical-align:top;*/
+}
+
+
+/*.entity_jsplumb .entityJsplumb_input input+span{
+	  width: 16px;
+		height: 16px;
+		background-color: red;
+		display: inline-block;
+		background: url(../imgs/icon_checkbox.png) no-repeat;
+		background-position-x: 0px;
+		background-position-y: -25px;
+		position: relative;
+		top: 3px;
+}
+.entity_jsplumb .entityJsplumb_input input:checked+span {
+    background-position: 0 0px
+}*/
+
+
+/*外键配置的样式*/
+
+.listigature_padd .table-hasIn-true {
+	width: 15px;
+	height: 11px;
+	background: url(../imgs/hasIn.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+
+.listigature_padd .table-hasOut-true {
+	width: 15px;
+	height: 11px;
+	background: url(../imgs/hasOut.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+.table-i-delete {
+	float: right;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.table-name {
+	width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: 0 20px;
+}
+
+
+/*测试圆样式开始*/
+
+.flowchart-object svg {
+	position: absolute;
+	stroke: none;
+	fill: #d3e2f3;
+	left: 0px;
+	top: 0px;
+}
+
+.flowchart-object {
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+	opacity: 0.8;
+	z-index: 20;
+	background: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	min-width: 0;
+	min-height: 0;
+	/*display: none;*/
+}
+
+.flowchart-object text {
+	stroke: none;
+	fill: #333333;
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.outer {
+	fill: #75a7db;
+	/*opacity:0.3;*/
+	cursor: pointer;
+}
+
+.flowchart-object:hover .outer {
+	opacity: 0.7;
+}
+
+.theme-green .flowchart-object svg {
+	fill: #f6fdf8;
+}
+
+.theme-green .outer {
+	fill: #e4f8e3
+}
+
+.theme-green .flowchart-object text {
+	fill: #017734
+}
+
+.theme-red .flowchart-object svg {
+	fill: #fdf6f5;
+}
+
+.theme-red .outer {
+	fill: #f9dfd6
+}
+
+.theme-red .flowchart-object text {
+	fill: #a92312
+}
+
+
+/*测试圆样式结束*/
+
+.theme-blue .table .name,
+.theme-blue .view .name,
+.theme-blue .table li.jtk-draggable,
+.theme-blue .view li.jtk-draggable {
+	background-color: #dce8f6;
+	color: #4a6c98;
+}
+
+.theme-blue .table-columns li {
+	background: #f5f8fd;
+	border-bottom: 1px solid #e6eff9;
+}
+
+.theme-blue .table-columns li:nth-of-type(odd) {
+	background: #fafcff;
+}
+
+.theme-blue .table,
+.theme-blue .view {
+	border: 1px solid #e6eff9;
+}
+
+.theme-blue .table-column-type-varchar {
+	background-color: #f5f8fd;
+}
+
+.theme-blue .table-column-type-integer {
+	background-color: #f5f8fd;
+}
+
+.theme-blue .table-column-type-date {
+	background-color: #e5f5f0;
+}
+
+.theme-blue .table-column[primary-key='true'] {
+	background-color: #fafcff;
+}
+
+.theme-blue .aLabel {
+	background: url(../imgs/blue/delete.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.theme-green .table .name,
+.theme-green .view .name,
+.theme-green .table li.jtk-draggable,
+.theme-green .view li.jtk-draggable {
+	background-color: #e4f8e3;
+	color: #017734;
+}
+
+.theme-green .table-columns li {
+	background: #f6fdf8;
+	border-bottom: 1px solid #e7f9ed;
+}
+
+.theme-green .table-columns li:nth-of-type(odd) {
+	background: #fcfffc;
+}
+
+.theme-green .table,
+.theme-blue .view {
+	border: 1px solid #e7f9ed;
+}
+
+.theme-green .table-column-type-varchar {
+	background-color: #f6fdf8;
+}
+
+.theme-green .table-column-type-integer {
+	background-color: #f6fdf8;
+}
+
+.theme-green .table-column-type-date {
+	background-color: #f6fdf8;
+}
+
+.theme-green .table-column[primary-key='true'] {
+	background-color: #f6fdf8;
+}
+
+.theme-green .aLabel {
+	background: url(../imgs/green/delete_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.theme-red .table .name,
+.theme-red .view .name,
+.theme-red .table li.jtk-draggable,
+.theme-red .view li.jtk-draggable {
+	background-color: #f9dfd6;
+	color: #a92312;
+}
+
+.theme-red .table-columns li {
+	border-bottom: 1px solid #fce6e4;
+	background: #fdf6f5;
+}
+
+.theme-red .table-columns li:nth-of-type(odd) {
+	background: #fffbfa;
+}
+
+.theme-red .aLabel {
+	background: url(../imgs/red/delete_red.png) no-repeat;
+	background-size: 100% 100%;
+}

@@ -1,0 +1,1 @@
+webpackJsonp([57],{"5Z+/":function(a,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0});t.default=function(a){if("basicRadar"===a.type)return{tooltip:{},legend:{data:a.data.dataName,type:"scroll",bottom:10,left:10,right:10},radar:[{indicator:a.data.indicator}],series:[{name:a.data.name,type:"radar",data:a.data.data}]};console.error("数据类型错误")}}});

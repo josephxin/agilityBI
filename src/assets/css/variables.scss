@@ -1,0 +1,112 @@
+/*
+定义通用的样式变量
+*/
+
+// 主要颜色
+$white: #ffffff;
+//收藏弹窗-文件夹颜色-黄色
+$color-yellow: #ffcd2c;
+$color-light-green: #2aa5aa;
+$color-dark-green: #128274;
+$color-left-bar: #03403d;
+$color-left-bar-light: #0a4d44;
+$body-background: #f2f4f5;
+$e1: #e1e1e1;
+$color30: #303030;
+$e6: #e6e6e6;
+
+//只要字体颜色
+$red-color:#dd2911;
+$green-color:#00a949;
+$blue-color:#4a74cb;
+
+// 头部颜色 蓝色版
+$header-border-bottom: #dddddd;
+$header-icon: #5e5e5e;
+$header-text: #676767;
+$header-english: #a4a4a4;
+$header-divider: #c3c3c3;
+$configure-list: rgba(31, 158, 255, 1);
+$configure-list-1: rgba(31, 158, 255, 0.1);
+$configure-list-2: rgba(31, 158, 255, 0.2);
+$configure-list-3: rgba(31, 158, 255, 0.3);
+$configure-list-5: rgba(31, 158, 255, 0.5);
+
+
+//头部颜色 红色版 
+$configure-list-red:rgba(221, 41, 17, 1);
+$configure-list-red-1:rgba(221, 41, 17, 0.1);
+$configure-list-red-2:rgba(221, 41, 17, 0.2);
+$configure-list-red-3:rgba(221, 41, 17, 0.3);
+$configure-list-red-5:rgba(221, 41, 17, 0.5);
+$bg-active-red: #c7402e;
+
+//头部颜色 绿色版
+$configure-list-green:rgba(0, 169, 73, 1);
+$configure-list-green-1:rgba(0, 169, 73, 0.1);
+$configure-list-green-2:rgba(0, 169, 73, 0.2);
+$configure-list-green-3:rgba(0, 169, 73, 0.3);
+$configure-list-green-5:rgba(0, 169, 73, 0.5);
+$bg-active-green: #176636;
+
+
+// 头部搜索框颜色
+$search-input-border: #bac5da;
+$search-input-bgcolor: #f9fbff;
+$search-input-color: #333;
+$search-input-btn: #f2f7ff;
+$search-blue: #4a74cb;
+$search-hot-li: #20364a;
+
+// 头部搜索框颜色 红色版
+$search-input-border-red:#dababa;
+$search-input-bgcolor-red:#fffaf9;
+$search-blue-red:#dd2911;
+//头部搜索宽绿色版
+$search-input-border-blue: #b2cbbd;
+$search-input-bgcolor-blue:#f8fcfa;
+$search-blue-blue:#00a949;
+
+
+$left-bar-border-bottom: #0d665a;
+$left-bar-border-top: #07332d;
+$tab-border-bottom: #58c2af;
+$tab-background: #044d44;
+$canvas-background-dark: #f3f3f3;
+$canvas-background-light: #f0f0f0;
+$f2: #f2f2f2;
+
+$btn-edit: #55baa8;
+$btn-back: #68a1b3;
+$btn-research: #1fa5ab;
+$btn-export: #018274;
+
+$font-green: #6ae2cd;
+$li-border: #2a7b71;
+$li-hover: #358b7f;
+$div-border: #e5e5e5;
+
+
+
+//配置页颜色
+$configuration-content-bottom:#a1adc7;
+$input-border:#85c2ba;
+$configuration-name-color:#008273;
+$btn-border-color:#325983;
+$configuration-span-color:#353535;
+
+//主页中  li  border 的颜色
+$search-li-border:#43a4ff;
+
+/*
+ * 蓝色版
+ * */
+//全局的字体颜色 在鼠标hover 事件时 字体color 所改变的值   蓝色版
+$whole-hover-color:#4a74cb;
+
+$home-change-color:#2c74ca;
+
+$home-recommend-color:#20334a;
+
+
+
